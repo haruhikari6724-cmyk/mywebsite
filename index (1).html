@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Department of Myanmar Education Center</title>
+</head>
+
+<body><!DOCTYPE html>
+<html>
+<head>
+<title>Verification</title>
+
+<style>
+
+body{
+background-color:#F3F6FA;
+font-family:'Courier New', monospace;
+text-align:center;
+margin-top:100px;
+}
+
+.box{
+background:#E9EDF2;
+width:340px;
+margin:auto;
+padding:10px;
+border-radius:10px;
+box-shadow:0 0 3px gray;
+}
+
+.code{
+  font-style:'Courier New', monospace;
+font-size:28px;
+color:red;
+letter-spacing:5px;
+margin:10px;
+}
+
+input{
+  width:90%;
+padding:10px;
+font-size:16px;
+margin-top:10px;
+}
+
+button{
+  width:98%;
+padding:12px;
+margin-top:10px;
+background:#1F3c88;
+color:white;
+border:none;
+font-size:18px;
+border-radius:10px;
+}
+
+</style>
+</head>
+
+<body><br><br>
+  <!--Tab to edit-->
+
+  <!--Tab to edit-->
+
+  <!--Tab to edit-->
+</br>
+  <!--Tab to edit-->
+</br><center><img src="myphoto.jpg" width="300">
+  <!--Tab to edit-->
+</img src="my photo.jpg" width="300">
+  <!--Tab to edit-->
+</center>
+
+<div class="box">
+
+<div class="code" id="randomCode"></div>
+
+<input type="text" id="userInput" placeholder="အထက်ပါ နံပါတ်အား ရိုက်ထည့်ပါ">
+
+<br>
+
+<button onclick="checkCode()">Submit</button>
+
+</div>
+
+<script>
+
+var code = Math.floor(100000 + Math.random()*900000);
+
+document.getElementById("randomCode").innerHTML = code;
+
+function checkCode(){
+
+var input = document.getElementById("userInput").value;
+
+if(input == code){
+
+window.location.href = "passed.html";
+
+}else{
+
+alert("Code မှားနေပါတယ်");
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
+  
+</body>
+
+</html>
